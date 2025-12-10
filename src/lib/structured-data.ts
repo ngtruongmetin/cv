@@ -9,16 +9,17 @@ export function generatePersonStructuredData() {
     description: RESUME_DATA.about,
     url: RESUME_DATA.personalWebsiteUrl,
     image: RESUME_DATA.avatarUrl,
-    sameAs: RESUME_DATA.contact.social.map((social) => social.url),
+    sameAs: RESUME_DATA.contact.social.map((s) => s.url),
     address: {
-      "@type": "Place",
-      name: RESUME_DATA.location,
+      "@type": "PostalAddress",
+      addressLocality: RESUME_DATA.location,
+      addressCountry: "Vietnam",
     },
     contactPoint: {
       "@type": "ContactPoint",
       email: RESUME_DATA.contact.email,
       telephone: RESUME_DATA.contact.tel,
-      contactType: "personal",
+      contactType: "Personal",
     },
     jobTitle: "Full Stack Engineer",
     worksFor:
@@ -33,54 +34,46 @@ export function generatePersonStructuredData() {
       "@type": "EducationalOrganization",
       name: edu.school,
     })),
-    hasOccupation: RESUME_DATA.work.map((job) => ({
-      "@type": "Occupation",
-      name: job.title,
-      occupationLocation: {
-        "@type": "Place",
-        name: RESUME_DATA.location,
-      },
-      occupationalCategory: "Software Engineering",
-      estimatedSalary: {
-        "@type": "MonetaryAmountDistribution",
-        name: "Professional software engineer",
-      },
-    })),
     knowsAbout: RESUME_DATA.skills,
   };
 }
 
 export function generateWebPageStructuredData() {
+  const url = "https://ngtruong.bcic.edu.vn";
+
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    url: "https://cv.jarocki.me",
+    url,
     inLanguage: "en-US",
     isPartOf: {
       "@type": "WebSite",
-      name: `${RESUME_DATA.name}'s Professional Resume`,
-      url: "https://cv.jarocki.me",
+      name: `${RESUME_DATA.name}'s Resume`,
+      url,
     },
     about: {
       "@type": "Person",
       name: RESUME_DATA.name,
+      url,
     },
     mainEntity: generatePersonStructuredData(),
   };
 }
 
+
 export function generateResumeStructuredData() {
+  const url = "https://ngtruong.bcic.edu.vn";
+
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    dateCreated: new Date().toISOString(),
+    name: `${RESUME_DATA.name} - Professional Resume`,
+    description: `${RESUME_DATA.name}'s professional CV and portfolio.`,
+    url,
     dateModified: new Date().toISOString(),
     mainEntity: generatePersonStructuredData(),
-    about: generatePersonStructuredData(),
-    name: `${RESUME_DATA.name} - Professional Resume`,
-    description: `Professional resume and portfolio of ${RESUME_DATA.name}, ${RESUME_DATA.about}`,
-    url: "https://cv.jarocki.me",
   };
 }
+
