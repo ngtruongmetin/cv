@@ -1,236 +1,152 @@
 import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA: ResumeData = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about: "Full Stack Engineer dedicated to building high-quality products.",
+  name: "Truong Ngoc Dang",
+  initials: "DNT",
+  location: "Tan Khanh Ward, Ho Chi Minh City, Vietnam",
+  locationLink: "https://maps.app.goo.gl/mVuqZQeXVufVhrEH6",
+  about: "Full Stack Website Developer. Educational Technology Enthusiast.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Full Stack Website Developer with substantive experience designing and delivering
+      web solutions for educational organizations in Vietnam. Since 2022, I have
+      supported digital transformation initiatives by architecting and building
+      learning resource websites, intelligent learning platforms, and school
+      portals that align with Industry 4.0 objectives. My practice combines
+      robust front-end engineering, scalable server-side systems, and human-centred
+      product design to create high-quality, maintainable software for educators
+      and learners.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/183300231?s=400&u=990c8e6eb015240a901ebc05903e06d64323f72b&v=4",
+  personalWebsiteUrl: "https://ngtruong.bcic.edu.vn",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "ngtruongmetin@gmail.com",
+    tel: "+84 86 591 6475",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/ngtruongmetin",
         icon: "github",
       },
       {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
+        name: "Facebook",
+        url: "https://www.facebook.com/school.i205",
+        icon: "facebook",
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Binh Chuan Secondary School",
+      degree:
+        "Third prize - Thuan An City Science and Engineering Fair (2023); Third prize (2024). Winner - Binh Duong Province Software Innovation Competition (2024).",
+      start: "2020",
+      end: "2024",
+    },
+    {
+      school: "Nguyen Trai - Binh Duong High School",
+      degree:
+        "Developing website solutions to support digital transformation in education.",
+      start: "2024",
+      end: "2027",
     },
   ],
   work: [
     {
-      company: "Motion",
-      link: "https://motionapp.com/",
-      badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-      title: "Senior Software Engineer",
-      start: "2025",
+      company: "Binh Chuan IT Club",
+      link: "https://bcic.edu.vn",
+      badges: ["HTML", "CSS", "JavaScript","PHP", "MySQL", "Competitive Programming"],
+      title: "Founder & Lead Instructor",
+      start: "2023",
       end: null,
       description: (
         <>
-          Working on internal AI agents platform allowing marketing specialists
-          to create AI workflows.
+          Lead technical responsibility for club digital initiatives: design and
+          maintenance of educational websites, development of learning resources,
+          and instruction of algorithm and data structure courses. Oversaw
+          student teams in competitive programming and coached participants to
+          provincial-level awards across multiple years.
         </>
       ),
     },
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      start: "2024",
-      end: "2025",
+      company: "Freelancer - Educational Website Solutions",
+      link: "https://ngtruong.bcic.edu.vn",
+      badges: ["React", "Next.js", "Node.js", "EdTech"],
+      title: "Freelance Full Stack Engineer",
+      start: "2022",
+      end: null,
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
-          </ul>
+          Provide end-to-end website development services to schools and educational
+          organizations, including digital learning platforms, content management
+          systems for learning resources, and integration of intelligent features
+          to support personalised learning. Responsibilities include requirements
+          analysis, architecture design, implementation, deployment and post-launch
+          support.
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      start: "2021",
+      company: "DesDevT",
+      link: "",
+      badges: ["Founder", "Full Stack", "Consulting"],
+      title: "Founder & Technical Lead",
+      start: "2022",
       end: "2024",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
+          Founded DesDevT to provide bespoke full-stack development and technology
+          consulting services to SMEs and educational institutions. Delivered
+          project portfolios including school portals and resource libraries.
+          Company operations concluded in 2024 after a successful delivery cycle.
         </>
       ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    // Frontend
+    "React",
+    "Next.js",
+    "JavaScript",
     "TypeScript",
+    "HTML5",
+    "CSS3",
     "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
+    // Backend
     "Node.js",
-    "GraphQL",
-    "Relay",
+    "PHP",
+    "MySQL",
+    "MongoDB",
+    // Core Competencies
     "System Architecture",
-    "Remote Team Leadership",
+    "Educational Technology",
+    "Technical Mentorship",
+    "Problem Solving",
+    "C++",
+    "Python",
   ],
+
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "LEJAI",
+      techStack: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "This is a website that helps high school students learn multilingual vocabulary. Used for the Vietnam Science and Engineering Fair (ViSEF) 2025-2026.",
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "lejai.bcic.edu.vn",
+        href: "https://lejai.bcic.edu.vn/",
       },
     },
     {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+      title: "HCM - Ebook",
+      techStack: ["Node.js", "EJS", "MySQL"],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "This is website for learning Local Education subject in Ho Chi Minh city.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "hcm-ebook",
+        href: "https://diaphuongso.edu.vn",
       },
     },
   ],
